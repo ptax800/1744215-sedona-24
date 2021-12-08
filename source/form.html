@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>form</title>
+</head>
+<body>
+<header class="main-header">
+  <nav class="main-header__nav">
+    <ul class="main-header__list">
+      <li class="main-header__item">
+        <a href="#" class="main-header__link">
+          <p class="main-header__text">Главная</p>
+        </a>
+      </li>
+      <li class="main-header__item">
+        <a href="#" class="main-header__link">
+          <p class="main-header__text">Фото и видео</p>
+        </a>
+      </li>
+      <li class="main-header__item">
+        <a href="#" class="main-header__link">
+          <p class="main-header__text">Форма Отзыва</p>
+        </a>
+      </li>
+      <li class="main-header__item">
+        <a href="#" class="main-header__link">
+          <p class="main-header__text">HTML ACADEMY</p>
+        </a>
+      </li>
+    </ul>
+    <div class="main-header__logo-container">
+      <img src="#" alt="логотип" class="main-header__logo">
+    </div>
+  </nav>
+</header>
+
+<main class="main-form">
+  <section class="sedona-pic">
+    <img src="#" alt="добро пожаловать в Седону" class="sedona-pic__img">
+  </section>
+  <section class="main-header">
+  <h1 class="main-header__heading">Оставьте свой отзыв</h1>
+  <p class="main-header__text">
+    Помогите нашим отелям стать лучше! оставьте отзыв о них,
+    а также о посещенных вами достопримечательностях
+  </p>
+  </section>
+
+  <form action="https://echo.htmlacademy.ru/" class="form">
+    <section class="form-impression">
+      <h2 class="form-impression__heading">ВАше Общее впечатление:</h2>
+      <ul class="form-impression__list">
+        <li class="form-impression__item">
+          <input type="radio" class="visually-hidden" name="impression" checked>
+          <span class="form-impression__text">Скорее положительное</span>
+        </li>
+        <li class="form-impression__item">
+          <input type="radio" class="visually-hidden" name="impression">
+          <span class="form-impression__text">Скорее отрицательное</span>
+        </li>
+        <li class="form-impression__item">
+          <input type="radio" class="visually-hidden" name="impression">
+          <span class="form-impression__text">Затрудняюсь ответить</span>
+        </li>
+      </ul>
+    </section>
+    <section class="form-your-name">
+      <h2 class="form-your-name__heading">Представьтесь</h2>
+      <ul class="form-your-name__list">
+        <li class="form-your-name__item">
+          <span class="form-your-name__text">ИМЯ*:</span>
+          <input type="text" class="form-your-name__field-name" placeholder="Петр">
+        </li>
+        <li class="form-your-name__item">
+          <span class="form-your-name__text">ФАМИЛИЯ*:</span>
+          <input type="text" class="form-your-name__field-name" placeholder="Иванов">
+        </li>
+        <li class="form-your-name__item">
+          <span class="form-your-name__text">Отчество:</span>
+          <input type="text" class="form-your-name__field-name" placeholder="Александрович">
+        </li>
+      </ul>
+    </section>
+
+    <section class="form-information">
+      <h2 class="form-information__heading">Контактная информация:</h2>
+      <ul class="form-information__list">
+        <li class="form-information__item">
+          <span class="form-information__text">Контактный телефон*:</span>
+          <input type="tel" class="form-information__tel-field" placeholder="Введите телефон">
+        </li>
+        <li class="form-information__item">
+          <span class="form-information__text">Электронная почта*:</span>
+          <input type="email" class="form-information__tel-field" placeholder="Введите e-mail">
+        </li>
+      </ul>
+    </section>
+
+    <section class="attraction">
+      <h2 class="attraction">посещенные достопримечательности:</h2>
+      <div class="attraction__container">
+        <ul class="attraction__list">
+          <li class="attraction__item">
+            <input type="checkbox" class="visually-hidden" checked>
+            <span class="attraction__text">Мост Дьявола</span>
+          </li>
+          <li class="attraction__item">
+            <input type="checkbox" class="visually-hidden" checked>
+            <span class="attraction__text">Гора-Колокол</span>
+          </li>
+          <li class="attraction__item">
+            <input type="checkbox" class="visually-hidden" checked>
+            <span class="attraction__text">Слайд-парк</span>
+          </li>
+          <li class="attraction__item">
+            <input type="checkbox" class="visually-hidden">
+            <span class="attraction__text">Красные скалы</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="form-review">
+      <h2 class="form-review__heading">Опишите свои эмоции:</h2>
+      <textarea class="form-review__text-review"  rows="7" cols="75"
+                placeholder="Опишите подробно все свои восторги"></textarea>
+    </section>
+    <section class="form-button">
+      <input class="form-button__main" type="submit" name="button-main" id="button-main" value="ОТПРАВИТЬ ОТЗЫВ">
+    </section>
+  </form>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <p class="footer__hash-tag">#visitSEDONA</p>
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <img src="#" alt="твиттер" class="social__twitter">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <img src="#" alt="фейсбук" class="social__facebook">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <img src="#" alt="ютуб" class="social__youtube">
+        </a>
+      </li>
+    </ul>
+    <div class="copyright">
+      <p class="copyright__text">Разработано</p>
+      <img src="#" alt="html academy" class="copyright__logo">
+    </div>
+  </div>
+</footer>
+</body>
+</html>
