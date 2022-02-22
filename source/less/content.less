@@ -1,0 +1,38 @@
+
+// color
+@darkblue: #81B3D2;
+@lightgrey: #EEEEEE;
+@white: #FFFFFF;
+
+// size
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 320px;
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2");
+  src: url("../fonts/ptsans.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2");
+  src: url("../fonts/ptsansbold.woff");
+  font-weight: 700;
+}
+
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  max-width: 500px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+}

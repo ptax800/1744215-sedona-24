@@ -30,14 +30,14 @@
       </li>
     </ul>
     <div class="main-header__logo-container">
-      <img src="#" alt="логотип" class="main-header__logo">
+      <img src="img/logo/logotype-mobile.svg" alt="логотип" class="main-header__logo">
     </div>
   </nav>
 </header>
 
 <main class="main-form">
   <section class="sedona-pic">
-    <img src="#" alt="добро пожаловать в Седону" class="sedona-pic__img">
+    <img src="img/form/sedona-welcome.svg" width="229" height="39" alt="добро пожаловать в Седону" class="sedona-pic__img">
   </section>
   <section class="main-header">
   <h1 class="main-header__heading">Оставьте свой отзыв</h1>
@@ -98,37 +98,37 @@
     </section>
 
     <section class="attraction">
-      <h2 class="attraction">посещенные достопримечательности:</h2>
+      <h2 class="attraction__heading">посещенные достопримечательности:</h2>
       <div class="attraction__container">
         <ul class="attraction__list">
           <li class="attraction__item">
-            <input type="checkbox" class="visually-hidden" checked>
-            <span class="attraction__text">Мост Дьявола</span>
+            <input for="diablo-bridge" type="checkbox" class="visually-hidden" name="checkbox" checked>
+            <label id="diablo-bridge" class="attraction__text">Мост Дьявола</label>
           </li>
           <li class="attraction__item">
-            <input type="checkbox" class="visually-hidden" checked>
-            <span class="attraction__text">Гора-Колокол</span>
+            <input type="checkbox" for="mount" class="visually-hidden"  name="checkbox" checked>
+            <label id="mount" class="attraction__text">Гора-Колокол</label>
           </li>
           <li class="attraction__item">
-            <input type="checkbox" class="visually-hidden" checked>
-            <span class="attraction__text">Слайд-парк</span>
+            <input type="checkbox" for="park" class="visually-hidden" name="checkbox"  checked>
+            <label id="park" class="attraction__text">Слайд-парк</label>
           </li>
           <li class="attraction__item">
-            <input type="checkbox" class="visually-hidden">
-            <span class="attraction__text">Красные скалы</span>
+            <input type="checkbox" for="red-mount" class="visually-hidden">
+            <label id="red-mount" class="attraction__text">Красные скалы</label>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="form-review">
+    <div class="form-review">
       <h2 class="form-review__heading">Опишите свои эмоции:</h2>
       <textarea class="form-review__text-review"  rows="7" cols="75"
                 placeholder="Опишите подробно все свои восторги"></textarea>
-    </section>
-    <section class="form-button">
-      <input class="form-button__main" type="submit" name="button-main" id="button-main" value="ОТПРАВИТЬ ОТЗЫВ">
-    </section>
+    </div>
+    <div class="form-button">
+      <button class="form-button__main" type="submit" name="button-main" id="button-main" >ОТПРАВИТЬ ОТЗЫВ</button>
+    </div>
   </form>
 </main>
 
@@ -138,23 +138,23 @@
     <ul class="social">
       <li class="social__item">
         <a href="#" class="social__link">
-          <img src="#" alt="твиттер" class="social__twitter">
+          <img src="img/logo/icon-twitter.svg" width="46" height="48" alt="твиттер" class="social__img">
         </a>
       </li>
       <li class="social__item">
         <a href="#" class="social__link">
-          <img src="#" alt="фейсбук" class="social__facebook">
+          <img src="img/logo/icon-facebook.svg" width="46" height="48" alt="фейсбук" class="social__img">
         </a>
       </li>
       <li class="social__item">
         <a href="#" class="social__link">
-          <img src="#" alt="ютуб" class="social__youtube">
+          <img src="img/logo/icon-youtube.svg" width="46" height="48" alt="ютуб" class="social__img">
         </a>
       </li>
     </ul>
     <div class="copyright">
       <p class="copyright__text">Разработано</p>
-      <img src="#" alt="html academy" class="copyright__logo">
+      <img src="img/logo/htmlacademy.svg" width="27" height="35" alt="html academy" class="copyright__logo">
     </div>
   </div>
 </footer>

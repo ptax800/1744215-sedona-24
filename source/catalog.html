@@ -1,64 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
+  <title>HTML Academy: Седона</title>
 </head>
 <body>
-<header class="main-header">
-  <nav class="main-header__nav">
-    <ul class="main-header__list">
-      <li class="main-header__item">
-        <a href="#" class="main-header__link">
-          <p class="main-header__text">Главная</p>
-        </a>
-      </li>
-      <li class="main-header__item">
-        <a href="#" class="main-header__link">
-          <p class="main-header__text">Фото и видео</p>
-        </a>
-      </li>
-      <li class="main-header__item">
-        <a href="#" class="main-header__link">
-          <p class="main-header__text">Форма Отзыва</p>
-        </a>
-      </li>
-      <li class="main-header__item">
-        <a href="#" class="main-header__link">
-          <p class="main-header__text">HTML ACADEMY</p>
-        </a>
-      </li>
-    </ul>
-    <div class="main-header__logo-container">
-      <img src="#" alt="логотип" class="main-header__logo">
-    </div>
-  </nav>
-</header>
+<div class="body-container">
+  <header class="main-header">
+    <nav class="main-header__nav">
+      <ul class="main-header__menu">
+        <li class="main-header__item">
+          <a href="#" class="main-header__link">
+            <p class="main-header__text">Главная</p>
+          </a>
+        </li>
+        <li class="main-header__item">
+          <a href="#" class="main-header__link">
+            <p class="main-header__text">Фото и видео</p>
+          </a>
+        </li>
+      </ul>
+      <div class="main-header__logo-container">
+        <img src="img/logo/logotype-mobile.svg" alt="логотип" class="main-header__logo">
+      </div>
 
-<main class="main-catalog">
-<h1 class="visually-hidden">Красоты Седоны</h1>
-  <section class="sedona-pic">
-    <img src="#" alt="добро пожаловать в Седону" class="sedona-pic__img">
-  </section>
+      <ul class="main-header__about-us">
+        <li class="main-header__item">
+          <a href="#" class="main-header__link">
+            <p class="main-header__text">Форма Отзыва</p>
+          </a>
+        </li>
+        <li class="main-header__item">
+          <a href="#" class="main-header__link">
+            <p class="main-header__text">HTML ACADEMY</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="main-catalog">
+
 <div class="main-catalog__container">
+  <h1 class="visually-hidden">Красоты Седоны</h1>
+  <section class="sedona-pic">
+    <img src="img/catalog/sedona-welcome.svg" alt="добро пожаловать в Седону" class="sedona-pic__img">
+  </section>
   <section class="photo-and-video">
-    <h2 class="photo-and-video__heading">Фото и видео</h2>
+    <h2 class="photo-and-video__heading">фото и видео</h2>
     <p class="photo-and-video__text">
-      Не можете решиться на путешествие из-за курса?
-      Фотографии помогут вам забыть о политике и экономике.
+      не можете решиться на путешествие из-за курса?
+      фотографии помогут вам забыть о политике и экономике.
     </p>
 
-  <section class=photo">
+  <section class="photo">
     <div class="photo__photo-container">
       <figure class="photo__figure">
-        <img src="#" alt="красоты Седоны" class="photo__image">
-        <figcaption class="photo__figcaption">
+        <a href="#" class="photo-link">
+        <img src="img/catalog/photo-1-mobile.jpg" width="280" height="280" alt="красоты Седоны" class="photo__image">
+        </a>
+          <figcaption class="photo__figcaption">
           <div class="photo__author-container">
-          <h3 class="photo__heading">Неродные просторы</h3>
+          <h3 class="photo__heading">неродные просторы</h3>
           <p class="photo__author-picture">Автор фото: Борис</p>
           </div>
-          <div class="photo__likes--container">
-            <img src="#" alt="лайк" class="photo__like-logo">
+          <div class="photo__likes-container">
+            <a href="" class="photo__like-href">
+            <img src="img/catalog/like-icon.svg" width="23" height="21" alt="лайк" class="photo__like-logo">
+            </a>
             <p class="photo__likes">1350</p>
           </div>
         </figcaption>
@@ -69,14 +80,18 @@
   <section class="photo">
     <div class="photo__photo-container">
       <figure class="photo__figure">
-        <img src="#" alt="красоты Седоны" class="photo__image">
-        <figcaption class="photo__figcaption">
+        <a href="#" class="photo-link">
+          <img src="img/catalog/photo-2-mobile.jpg" width="280" height="280" alt="красоты Седоны" class="photo__image">
+        </a>
+          <figcaption class="photo__figcaption">
           <div class="photo__author-container">
           <h3 class="photo__heading">Местная растительность</h3>
           <p class="photo__author-picture">Автор фото: Сергей</p>
           </div>
-          <div class="photo__likes--container">
-            <img src="#" alt="лайк" class="photo__like-logo">
+          <div class="photo__likes-container">
+            <a href="" class="photo__like-href">
+            <img src="img/catalog/like-icon.svg" width="23" height="21" alt="лайк" class="photo__like-logo">
+            </a>
             <p class="photo__likes">143</p>
           </div>
         </figcaption>
@@ -87,14 +102,18 @@
   <section class="photo">
     <div class="photo__photo-container">
       <figure class="photo__figure">
-        <img src="#" alt="красоты Седоны" class="photo__image">
-        <figcaption class="photo__figcaption">
+        <a href="#" class="photo-link">
+        <img src="img/catalog/photo-3-mobile.jpg" width="280" height="280" alt="красоты Седоны" class="photo__image">
+        </a>
+          <figcaption class="photo__figcaption">
           <div class="photo__author-container">
           <h3 class="photo__heading">Дорога на север</h3>
           <p class="photo__author-picture">Автор фото: Петр</p>
           </div>
-          <div class="photo__likes--container">
-            <img src="#" alt="лайк" class="photo__like-logo">
+          <div class="photo__likes-container">
+            <a href="" class="photo__like-href">
+            <img src="img/catalog/like-icon.svg" width="23" height="21" alt="лайк" class="photo__like-logo">
+            </a>
             <p class="photo__likes">96</p>
           </div>
         </figcaption>
@@ -105,20 +124,44 @@
   <section class="photo">
     <div class="photo__photo-container">
       <figure class="photo__figure">
-        <img src="#" alt="красоты Седоны" class="photo__image">
-        <figcaption class="photo__figcaption">
+        <a href="#" class="photo-link">
+        <img src="img/catalog/photo-4-desktop%201.jpg" width="280" height="280" alt="красоты Седоны" class="photo__image">
+        </a>
+          <figcaption class="photo__figcaption">
           <div class="photo__author-container">
           <h3 class="photo__heading">Мост дьявола</h3>
           <p class="photo__author-picture">Автор фото: Антон</p>
           </div>
-          <div class="photo__likes--container">
-            <img src="#" alt="лайк" class="photo__like-logo">
+          <div class="photo__likes-container">
+            <a href="" class="photo__like-href">
+            <img src="img/catalog/like-icon.svg" width="23" height="21" alt="лайк" class="photo__like-logo">
+            </a>
             <p class="photo__likes">254</p>
           </div>
         </figcaption>
       </figure>
     </div>
   </section>
+    <section class="video">
+      <div class="video__video-container">
+        <h2 class="video__heading">все еще сомневаетесь?</h2>
+        <p class="video__text">
+          смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        </p>
+        <figure class="video__figure">
+          <a href="#" class="video-link">
+            <img src="img/catalog/video-mobile.jpg" width="280" height="280" alt="красоты Седоны" class="video__image">
+          </a>
+          <figcaption class="video__figcaption">
+            <div class="video__author-container">
+              <h3 class="video__heading">Мост дьявола</h3>
+              <p class="video__author-picture">Автор фото: Антон</p>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
   </section>
 </div>
 </main>
@@ -129,25 +172,26 @@
     <ul class="social">
       <li class="social__item">
         <a href="#" class="social__link">
-          <img src="#" alt="твиттер" class="social__twitter">
+          <img src="img/logo/icon-twitter.svg" width="46" height="48" alt="твиттер" class="social__img">
         </a>
       </li>
       <li class="social__item">
         <a href="#" class="social__link">
-          <img src="#" alt="фейсбук" class="social__facebook">
+          <img src="img/logo/icon-facebook.svg" width="46" height="48" alt="фейсбук" class="social__img">
         </a>
       </li>
       <li class="social__item">
         <a href="#" class="social__link">
-          <img src="#" alt="ютуб" class="social__youtube">
+          <img src="img/logo/icon-youtube.svg" width="46" height="48" alt="ютуб" class="social__img">
         </a>
       </li>
     </ul>
     <div class="copyright">
       <p class="copyright__text">Разработано</p>
-      <img src="#" alt="html academy" class="copyright__logo">
+      <img src="img/logo/htmlacademy.svg" width="27" height="35" alt="html academy" class="copyright__logo">
     </div>
   </div>
 </footer>
+</div>
 </body>
 </html>
